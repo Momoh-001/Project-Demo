@@ -1,0 +1,143 @@
+/* Main container */
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+/* About section styling */
+.aboutSection, .migrationSection, .sustainabilitySection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+  background-color: #eef2f7; /* Light background */
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 50%;
+  opacity: 0;
+  animation: slideInFromLeft 1.2s ease-in-out forwards;
+}
+
+.aboutTitle, .sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Image container */
+.imageContainer {
+  flex: 1;
+  max-width: 50%;
+  opacity: 0;
+  animation: slideInFromRight 1.2s ease-in-out forwards;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Call-to-action section with animation */
+.cta {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #019bb7;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .aboutSection, .migrationSection, .sustainabilitySection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContainer, .imageContainer {
+    max-width: 100%;
+  }
+
+  .aboutTitle, .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .aboutText {
+    font-size: 1rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.8rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

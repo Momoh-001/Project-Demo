@@ -1,0 +1,74 @@
+.container {
+    padding: 2rem;
+  }
+  
+  .servicesSection {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .servicesTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .servicesText {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .servicesList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: black;
+  }
+  
+  .serviceItem {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .serviceTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .serviceDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .cta {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ctaText {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ctaBtn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaBtn:hover {
+    background-color: #0097a7;
+  }
+  

@@ -1,0 +1,272 @@
+/* Main container */
+.container {
+    padding: 0;
+    margin: 0;
+    background-color: #111827; /* New primary background color */
+  }
+  
+  /* Hero section with background image */
+  .hero {
+    position: relative;
+    background-image: url('./images/Freetown-Sierra-Leone.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjusted height for better view */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text inside hero section */
+  }
+  
+  /* Dark overlay for the hero section */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Text styles for hero section */
+  .heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroText {
+    font-size: 1.2rem;
+  }
+  
+  /* Intro section styling */
+  .intro {
+    padding: 2rem;
+    color: white; /* Ensure text is readable on dark background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text inside intro section */
+  }
+  
+  .introTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .introContent {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 2rem; /* Space between text and image */
+    /* align-items: center; */
+    width: 90%; /* Limit the width for better layout */
+    margin: 0 auto; /* Center the content */
+    
+  }
+  
+  .introText,
+  .introImage {
+    flex: 1;
+  }
+  
+  .introText {
+    width: 100%; /* Limit the width of the text box */
+    text-align: left;
+  }
+
+  .introText p {
+    margin-bottom: 20px;
+  }
+
+  
+  .introImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+  }
+  
+/* Key Issues Section */
+.keyIssues {
+  padding: 3rem 0;
+  text-align: center;
+  
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.issuesGrid {
+  display: flex;
+  gap: 2rem;
+  color: black; 
+}
+
+.issueCard {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+}
+
+.issueImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.issueTitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.issueText {
+  font-size: 1rem;
+}
+
+/* Research Findings Section */
+/* Research Findings Section */
+.researchFindings {
+  padding: 3rem 2rem;
+  background-color: #f5f5f5;
+  color: #111827;
+  text-align: center;
+}
+
+.researchContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.findingsCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.findingCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%; /* Adjust card width */
+  max-width: 350px;
+  text-align: left;
+}
+
+.findingTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.findingText {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+
+/* CTA Section */
+.cta {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+  /* Call-to-action section styling */
+  .cta {
+    padding: 2rem;
+    text-align: center;
+    color: black; /* Ensure text is readable on dark background */
+    background-color: #cbd5e1;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Call-to-action button styling */
+  .ctaBtn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background-color: #00bcd4; /* Primary button color */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  /* Hover effect for CTA button */
+  .ctaBtn:hover {
+    background-color: #019bb7; /* Darker shade on hover */
+  }
+  
+  
+  /* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  /* General Container Adjustments */
+  .container {
+    padding: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 70vh; /* Reduce height for mobile */
+  }
+
+  .heroTitle {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  /* Intro Section */
+  .introContent {
+    flex-direction: column; /* Stack text and image vertically */
+    gap: 1.5rem; /* Adjust spacing */
+  }
+
+  .introText {
+    width: 100%; /* Ensure full width for text */
+  }
+
+  /* Key Issues Section */
+  .issuesGrid {
+    flex-direction: column; /* Stack the issue cards vertically */
+    gap: 1rem; /* Smaller gap between cards */
+  }
+
+  .issueCard {
+    padding: 1rem; /* Reduce padding on mobile */
+  }
+
+  .issueImage {
+    height: 150px; /* Smaller image height for mobile */
+  }
+
+  /* Research Findings Section */
+  .findingsCards {
+    flex-direction: column; /* Stack the findings cards vertically */
+    gap: 1rem; /* Smaller gap between cards */
+  }
+
+  .findingCard {
+    max-width: 100%; /* Full width for findings cards on mobile */
+  }
+
+  /* CTA Section */
+  .ctaTitle {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .ctaBtn {
+    padding: 0.6rem 1.2rem; /* Adjust padding for mobile */
+  }
+}
